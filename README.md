@@ -1,4 +1,4 @@
-<h1>Hi, I'm Sam!  <a href="https://linkedin.com/in/samuel-abebe-518056281">Cybersecurity Professional</a>
+<h1>Hi, I'm Sam!  <a href="https://linkedin.com/in/samuel-abebe-518056281">IT Professional</a>
 <h2>🔐 Cybersecurity Projects:</h2>
 
 - [Active Directory Home]
