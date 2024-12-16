@@ -3,16 +3,16 @@
 <h2>🧑‍💻 Infromation Technology Projects 🧑‍💻</h2>
 
 - osTicket: Creating a Ticketing System for Help Desk
-  - osTicket: Prerequisites and Installation
-  - osTicket: Post-Installation Configuration
-  - osTicket: Ticet Lifecycle Examples
+  - [osTicket: Prerequisites and Installation](https://github.com/samabebe/osticket-prereqs)
+  - [osTicket: Post-Installation Configuration](https://github.com/samabebe/post-install-config)
+  - [osTicket: Ticet Lifecycle Examples](https://github.com/samabebe/ticket-lifecycle)
 
 - Microsoft Azure
-  - Setting Up Active Directory using Azure VMs
-  - Network Security Groups (NSGs) and Inspecting Network Protocols with Wireshark
+  - [Setting Up Active Directory using Azure VMs](https://github.com/samabebe/configure-ad)
+  - [Network Security Groups (NSGs) and Inspecting Network Protocols with Wireshark](https://github.com/samabebe/azure-network-protocols)
 
 - Virtual Private Netowrk
-  - VPN Setup in Virtual Machine
+  - [VPN Setup in Virtual Machine](https://github.com/samabebe/Setting-UP-A-VPN)
   
 <h2>🏫 Certificates</h2>
 
