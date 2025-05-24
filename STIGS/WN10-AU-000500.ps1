@@ -4,13 +4,13 @@
 
 .NOTES
     Author          : Samuel Abebe
-    LinkedIn        : linkedin.com/in/joshmadakor/
-    GitHub          : github.com/joshmadakor1
+    LinkedIn        : linkedin.com/in/samuel-abebe-518056281/
+    GitHub          : github.com/samabebe
     Date Created    : 2025-22-05
     Last Modified   : 2025-22-05
     Version         : 1.0
-    CVEs            : N/A
-    Plugin IDs      : 
+    CVEs            : 
+    Plugin IDs      : Windows Compliance 
     STIG-ID         : WN10-AU-000500
 
 .TESTED ON
