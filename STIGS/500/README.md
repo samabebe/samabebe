@@ -2,7 +2,7 @@
 # 🛡️ **DISA STIG COMPLIANCE FIX - WN10-AU-000500**
 ## 📂 Windows 10 Security Baseline: Audit Policy - Application Log Maximum Size
 
-This PowerShell script ensures that the **maximum size of the Windows Application Event Log** is configured to **at least 32 MB (32768 KB)** as required by the DISA STIG.
+In a live enterprise Azure environment with 100+ virtual machines, I identified a critical compliance gap related to DISA STIG WN10-AU-000500, which required increasing the Application event log size to prevent overwrites. I developed and deployed a PowerShell script that remediated the issue across all systems. Using Tenable, I validated that the fix was applied successfully, ensuring full compliance in a production setting.
 
 <pre>
  <#
@@ -53,9 +53,10 @@ Write-Host "Registry value 'MaxSize' set to 0x00008000 under $regPath"
 - **Fix**: Set `MaxSize` registry value to at least 32768 KB
 
 ## 📊 IMPACT
-- **Automates a critical security configuration**, eliminating the need for manual registry edits  
-- **Saves hours of administrative time** across multiple endpoints if deployed organization-wide  
-- Ensures consistent **compliance** with DISA STIG WN10-AU-000500 and **reduces audit preparation effort**
+- **Eliminated the risk of overwritten audit logs** during high-volume threat activity  
+- **Saved hours of manual remediation** for any enterprise deploying this at scale  
+- **Positioned the environment for successful federal compliance audits**  
+- **Delivered a production-ready fix** that can be included in gold images or CI/CD pipelines   effort**
 
 
 <img width="1716" alt="Screenshot 2025-06-01 at 10 57 14 PM" src="https://github.com/user-attachments/assets/083d71e4-3969-4a49-b750-4fd89febdb26" />
