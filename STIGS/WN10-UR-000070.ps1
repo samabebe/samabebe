@@ -24,42 +24,58 @@
     PS C:\> .\WN10-UR-000070.ps1 
 #>
 
-# Must be run as Administrator
+# Stop script if any command fails
 $ErrorActionPreference = "Stop"
 
-# Security identifiers to deny network access
+# Define SIDs to deny network logon rights
 $denySIDs = @(
     "S-1-5-113",  # Local account
-    "S-1-5-114"   # Local account and member of Administrators group
+    "S-1-5-114"   # Local account + member of Administrators group
 )
 
-# Define the policy name
+# Define the privilege to set
 $policyName = "SeDenyNetworkLogonRight"
 
-# Get current setting
-$currentSetting = (secedit /export /cfg "$env:TEMP\secpol.cfg" | Out-Null; 
-                   Get-Content "$env:TEMP\secpol.cfg" | 
-                   Where-Object { $_ -match "^$policyName\s*=" }) -replace "^$policyName\s*=\s*", ""
+# Export current local security policy to a temp file
+$secpolPath = "$env:TEMP\secpol.cfg"
+secedit /export /cfg $secpolPath | Out-Null
 
-# Combine existing SIDs with the new ones
+# Extract existing SIDs assigned to this policy
+$currentLine = Get-Content $secpolPath | Where-Object { $_ -match "^$policyName\s*=" }
+$currentSetting = if ($currentLine) {
+    $currentLine -replace "^$policyName\s*=\s*", ""
+} else {
+    ""
+}
+
+# Combine existing and required SIDs, ensuring uniqueness
 $currentSIDs = $currentSetting -split ',' | Where-Object { $_ -ne '' }
-$newSIDs = ($currentSIDs + $denySIDs) | Sort-Object -Unique
+$finalSIDs = ($currentSIDs + $denySIDs) | Sort-Object -Unique
 
-# Create INF template
+# Build updated INF template
 $infPath = "$env:TEMP\set_user_rights.inf"
-@"
+$infContent = @"
 [Unicode]
 Unicode=yes
+
 [System Access]
+
 [Event Audit]
+
 [Privilege Rights]
-$policyName = $($newSIDs -join ",")
+$policyName = $($finalSIDs -join ",")
+
 [Version]
 signature="\$CHICAGO$"
 Revision=1
-"@ | Set-Content -Encoding Unicode -Path $infPath
+"@
 
-# Apply the INF file
-secedit /configure /db secedit.sdb /cfg $infPath /areas USER_RIGHTS
+# Write the INF file using Unicode encoding
+Set-Content -Path $infPath -Value $infContent -Encoding Unicode
 
-Write-Host "WN10-UR-000070 policy applied successfully."
+# Apply the updated user rights assignment
+secedit /configure /db secedit.sdb /cfg $infPath /areas USER_RIGHTS /quiet
+
+# Final confirmation message
+Write-Host " no STIG WN10-UR-000070 applied successfully."
+Write-Host "SIDs denied network access: $($finalSIDs -join ', ')"
