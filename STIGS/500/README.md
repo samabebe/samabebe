@@ -6,7 +6,7 @@
 
 <img width="1724" alt="Screenshot 2025-06-01 at 11 46 00 PM" src="https://github.com/user-attachments/assets/41cc47dd-c17d-4ea6-982c-a3f3732a8158" />
 
-### While working as a Cybersecurity Support Engineer Intern in a real enterprise Azure environment, I was running an advanced DISA STIG scan across 65 virtual machines. After reviewing the scan results, I noticed a recurring high-severity failure on all systems — WN10-AU-000500. Left unaddressed, this could impact security visibility and compliance posture. I took full ownership of the issue and proposed a solution.
+### While working as a Cybersecurity Support Engineer Intern At LOG(N) Pacific, I was running an advanced DISA STIG scan across 65 virtual machines. After reviewing the scan results, I noticed a recurring high-severity failure on all systems — WN10-AU-000500. Left unaddressed, this could impact security visibility and compliance posture. I took full ownership of the issue and proposed a solution.
 
 <img width="1657" alt="Screenshot 2025-06-01 at 11 47 38 PM" src="https://github.com/user-attachments/assets/0e57cdff-f97c-4697-82a6-bf34f6e368ff" />
 
