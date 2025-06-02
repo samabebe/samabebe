@@ -54,7 +54,7 @@ Write-Host "Registry value 'MaxSize' set to 0x00008000 under $regPath"
 
 ## 📊 IMPACT
 - **Eliminated the risk of overwritten audit logs** during high-volume threat activity  
-- **Saved hours of manual remediation** for any enterprise deploying this at scale  
+- **Saved hours of manual remediation** for LOG(N) Pecific deploying this at scale  
 - **Positioned the environment for successful federal compliance audits**  
 - **Delivered a production-ready fix** that can be included in gold images or CI/CD pipelines   effort**
 
