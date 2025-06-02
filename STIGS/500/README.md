@@ -57,7 +57,8 @@ Write-Host "Registry value 'MaxSize' set to 0x00008000 under $regPath"
 - **Saves hours of administrative time** across multiple endpoints if deployed organization-wide  
 - Ensures consistent **compliance** with DISA STIG WN10-AU-000500 and **reduces audit preparation effort**
 
-<img width="1658" alt="Screenshot 2025-06-01 at 9 39 23 PM" src="https://github.com/user-attachments/assets/f04c464a-38d0-4203-abb6-ec94e1572500" />
+
+<img width="1716" alt="Screenshot 2025-06-01 at 10 57 14 PM" src="https://github.com/user-attachments/assets/083d71e4-3969-4a49-b750-4fd89febdb26" />
 
   
 ## 🧠 Author: Samuel Abebe
