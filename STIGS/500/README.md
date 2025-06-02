@@ -2,8 +2,16 @@
 # 🛡️ **DISA STIG COMPLIANCE FIX - WN10-AU-000500**
 ## 📂 Windows 10 Security Baseline: Audit Policy - Application Log Maximum Size
 
-In a live enterprise Azure environment with **100+ production virtual machines**, I identified a critical compliance gap related to DISA STIG WN10-AU-000500, which required increasing the Application event log size to prevent overwrites. I developed and deployed a PowerShell script that remediated the issue across all systems. Using Tenable, I validated that the fix was applied successfully, ensuring full compliance in a production setting.
+### In a live enterprise Azure environment with **65 virtual machines**, I identified a critical compliance gap related to DISA STIG WN10-AU-000500, which required increasing the Application event log size to prevent overwrites. I developed and deployed a PowerShell script that remediated the issue across all systems. Using Tenable, I validated that the fix was applied successfully, ensuring full compliance in a production setting.
 
+<img width="1724" alt="Screenshot 2025-06-01 at 11 46 00 PM" src="https://github.com/user-attachments/assets/41cc47dd-c17d-4ea6-982c-a3f3732a8158" />
+
+### While working as a Cybersecurity Support Engineer Intern in a real enterprise Azure environment, I was running an advanced DISA STIG scan across 65 virtual machines. After reviewing the scan results, I noticed a recurring high-severity failure on all systems — WN10-AU-000500. Left unaddressed, this could impact security visibility and compliance posture. I took full ownership of the issue and proposed a solution.
+
+<img width="1657" alt="Screenshot 2025-06-01 at 11 47 38 PM" src="https://github.com/user-attachments/assets/0e57cdff-f97c-4697-82a6-bf34f6e368ff" />
+
+### developed a PowerShell script and tested it on a dedicated virtual machine to ensure it functioned correctly before submitting it for review.
+<img width="1728" alt="Screenshot 2025-06-02 at 12 32 57 AM" src="https://github.com/user-attachments/assets/fa8c1dbe-c645-49cc-9ba1-5f6aef65b4c3" />
 <pre>
  <#
 .SYNOPSIS
@@ -11,7 +19,6 @@ In a live enterprise Azure environment with **100+ production virtual machines**
 
 .NOTES
     Author          : Samuel Abebe
-    LinkedIn        : linkedin.com/in/samuel-abebe-518056281/
     GitHub          : github.com/samabebe
     Date Created    : 2025-22-05
     Last Modified   : 2025-22-05
@@ -41,6 +48,7 @@ if (-not (Test-Path $regPath)) {
     New-Item -Path $regPath -Force
 }
 
+
 # Set the registry value
 New-ItemProperty -Path $regPath -Name $propertyName -Value $propertyValue -PropertyType DWord -Force
 
@@ -54,12 +62,16 @@ Write-Host "Registry value 'MaxSize' set to 0x00008000 under $regPath"
 
 ## 📊 IMPACT
 - **Eliminated the risk of overwritten audit logs** during high-volume threat activity  
-- **Saved hours of manual remediation** for LOG(N) Pecific deploying this at scale  
+- **Saved hours of manual remediation** for LOG(N) Pecific deploying this to 65 VM's 
 - **Positioned the environment for successful federal compliance audits**  
 - **Delivered a production-ready fix** that can be included in gold images or CI/CD pipelines   effort**
 
+### The deployment was successful—(100% of targeted systems were remediated within 48 hours). A follow-up scan from Tenable confirmed the STIG vulnerability was cleared across the entire environment.*
+<img width="1727" alt="Screenshot 2025-06-01 at 11 57 15 PM" src="https://github.com/user-attachments/assets/dd541866-a95e-4d56-9119-b4bf24e4960b" />
+<img width="661" alt="Screenshot 2025-06-01 at 11 55 55 PM" src="https://github.com/user-attachments/assets/efcd52d0-243c-43b1-9a15-0e4b0989c0a5" />
 
-<img width="1716" alt="Screenshot 2025-06-01 at 10 57 14 PM" src="https://github.com/user-attachments/assets/083d71e4-3969-4a49-b750-4fd89febdb26" />
+### My overall impact to security posture was a 0.33 increase in Micrsoft Secuirty Score 
+<img width="466" alt="Screenshot 2025-06-02 at 12 28 23 AM" src="https://github.com/user-attachments/assets/cce84a01-8489-4af9-9fb2-b586e826626b" />
 
   
 ## 🧠 Author: Samuel Abebe
