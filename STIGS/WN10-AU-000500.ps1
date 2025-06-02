@@ -27,7 +27,7 @@
 # Define the registry path and property
 $regPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\EventLog\Application"
 $propertyName = "MaxSize"
-$propertyValue = 0x00008000  # This is 32768 in decimal (32 KB)
+$propertyValue = 0x00008000  # This is 32768 in decimal (32 MB)
 
 # Create the registry path if it doexsn't exist
 if (-not (Test-Path $regPath)) {
