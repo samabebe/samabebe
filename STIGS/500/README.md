@@ -2,7 +2,7 @@
 # 🛡️ **DISA STIG COMPLIANCE FIX - WN10-AU-000500**
 ## 📂 Windows 10 Security Baseline: Audit Policy - Application Log Maximum Size
 
-In a live enterprise Azure environment with 100+ virtual machines, I identified a critical compliance gap related to DISA STIG WN10-AU-000500, which required increasing the Application event log size to prevent overwrites. I developed and deployed a PowerShell script that remediated the issue across all systems. Using Tenable, I validated that the fix was applied successfully, ensuring full compliance in a production setting.
+In a live enterprise Azure environment with 100+ production virtual machines, I identified a critical compliance gap related to DISA STIG WN10-AU-000500, which required increasing the Application event log size to prevent overwrites. I developed and deployed a PowerShell script that remediated the issue across all systems. Using Tenable, I validated that the fix was applied successfully, ensuring full compliance in a production setting.
 
 <pre>
  <#
