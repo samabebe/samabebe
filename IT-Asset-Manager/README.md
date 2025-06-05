@@ -42,3 +42,36 @@ Each asset includes:
 ---
 
 ## 📌 Sample Menu UI
+<img width="337" alt="Screenshot 2025-06-05 at 7 48 33 PM" src="https://github.com/user-attachments/assets/28532574-1eea-46aa-8f1e-38ac400bf676" />
+---
+
+## 🛠 Prerequisites
+
+- PowerShell (Windows PowerShell 5.1 or PowerShell Core 7+)
+- No external modules or tools required
+
+---
+
+## 🧠 Why I Built This
+
+> As an aspiring IT Support and Asset Coordinator, I created this tool to solve a real-world need: tracking IT equipment in environments without full-scale ITAM software. This project demonstrates my scripting skills, automation mindset, and ability to create practical solutions that save time and reduce asset loss.
+
+Amazon Leadership Principles applied:
+- **Invent and Simplify**
+- **Bias for Action**
+- **Ownership**
+- **Deliver Results**
+
+---
+
+## 📂 Output Files
+
+- `assets.csv` — primary data file storing all assets
+- `report.csv` — generated report of all "In Use" assets and summary
+
+---
+
+## 🧪 Example Usage
+
+```powershell
+PS> .\asset_manager.ps1
