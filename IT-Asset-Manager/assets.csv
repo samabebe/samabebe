@@ -1,1 +1,4 @@
-
+AssetID,AssetType,Brand,Model,SerialNumber,AssignedTo,Status,Location,PurchaseDate,Notes
+AST-0001,Laptop,Dell,Latitude 7410,ABC12345,John Doe,In Use,Office A,2024-03-15,Assigned for dev work
+AST-0002,Monitor,HP,P24h G4,XYZ67890,In Stock,Storage Room,2023-11-02,Spare monitor
+AST-0003,Laptop,Lenovo,ThinkPad X1,YTR54321,Jane Smith,In Use,Remote,2023-09-20,Used for fieldwork
