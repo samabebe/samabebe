@@ -1,4 +1,4 @@
-# 💻 IT Asset Manager – PowerShell Script
+# IT Asset Manager – PowerShell Script
 
 A lightweight PowerShell-based tool to manage and track IT equipment (laptops, monitors, peripherals, etc.) using a simple CSV file. Ideal for small IT departments or individual IT coordinators who need a quick and effective way to track assets without expensive software.
 
@@ -11,18 +11,18 @@ I developed a PowerShell script with a menu-driven interface that:
 	•	Generates reports (report.csv) listing “In Use” assets and usage summaries
 
 
-## 🚀 Features
+## Features
 
-- ✅ View all tracked IT assets
-- ➕ Add new assets with automatic ID generation
-- 🛠️ Update asset details interactively
-- 🔍 Search assets by Asset ID
-- 📊 Generate a usage report (CSV export)
-- 💾 Persistent data storage using `assets.csv`
+- View all tracked IT assets
+- Add new assets with automatic ID generation
+- Update asset details interactively
+- Search assets by Asset ID
+- Generate a usage report (CSV export)
+- Persistent data storage using `assets.csv`
 
 ---
 
-## 📁 How It Works
+## How It Works
 
 - On first run, it creates `assets.csv` with proper headers
 - Uses a menu-driven interface to guide user actions
@@ -31,7 +31,7 @@ I developed a PowerShell script with a menu-driven interface that:
 
 ---
 
-## 📦 Asset Fields
+## Asset Fields
 
 Each asset includes:
 
@@ -48,13 +48,13 @@ Each asset includes:
 
 ---
 
-## 📌 Sample Menu UI
+## Sample Menu UI
 
 ![image](https://github.com/user-attachments/assets/362a5315-66ba-41f7-84e1-72f9175c4ce9)
 
 ---
 
-## 🛠 Prerequisites
+## Prerequisites
 
 - PowerShell (Windows PowerShell 5.1 or PowerShell Core 7+)
 - No external modules or tools required
@@ -63,7 +63,7 @@ Each asset includes:
 
 https://drive.google.com/file/d/1gdniJkyaIowUVFmSAx9tqzZt4nvo-6EW/view?usp=share_link
 
-## 🧠 Why I Built This
+## Why I Built This
 
 > As an aspiring IT Support and Asset Coordinator, I created this tool to solve a real-world need: tracking IT equipment in environments without full-scale ITAM software. This project demonstrates my scripting skills, automation mindset, and ability to create practical solutions that save time and reduce asset loss.
 
@@ -73,14 +73,14 @@ https://drive.google.com/file/d/1gdniJkyaIowUVFmSAx9tqzZt4nvo-6EW/view?usp=share
 
 ---
 
-## 📂 Output Files
+## Output Files
 
 - `assets.csv` — primary data file storing all assets
 - `report.csv` — generated report of all "In Use" assets and summary
 
 ---
 
-## 🧪 Example Usage
+## Example Usage
 
 ```powershell
 PS> .\asset_manager.ps1
