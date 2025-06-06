@@ -4,6 +4,13 @@ A lightweight PowerShell-based tool to manage and track IT equipment (laptops, m
 
 ---
 
+I developed a PowerShell script with a menu-driven interface that:
+	•	Automatically generates a CSV file (assets.csv) to store asset data
+	•	Handles operations like adding, viewing, updating, and searching for assets
+	•	Assigns unique Asset IDs (AST-0001, AST-0002, etc.)
+	•	Generates reports (report.csv) listing “In Use” assets and usage summaries
+
+
 ## 🚀 Features
 
 - ✅ View all tracked IT assets
@@ -42,7 +49,9 @@ Each asset includes:
 ---
 
 ## 📌 Sample Menu UI
-<img width="337" alt="Screenshot 2025-06-05 at 7 48 33 PM" src="https://github.com/user-attachments/assets/28532574-1eea-46aa-8f1e-38ac400bf676" />
+
+![image](https://github.com/user-attachments/assets/362a5315-66ba-41f7-84e1-72f9175c4ce9)
+
 ---
 
 ## 🛠 Prerequisites
@@ -58,11 +67,9 @@ https://drive.google.com/file/d/1gdniJkyaIowUVFmSAx9tqzZt4nvo-6EW/view?usp=share
 
 > As an aspiring IT Support and Asset Coordinator, I created this tool to solve a real-world need: tracking IT equipment in environments without full-scale ITAM software. This project demonstrates my scripting skills, automation mindset, and ability to create practical solutions that save time and reduce asset loss.
 
-Amazon Leadership Principles applied:
-- **Invent and Simplify**
-- **Bias for Action**
-- **Ownership**
-- **Deliver Results**
+	•	Improved Efficiency: Significantly reduced the time it takes to track, update, and audit IT assets by replacing manual spreadsheets with an interactive script.
+	•	Lower Risk of Asset Loss: By assigning unique Asset IDs and tracking status/location, the tool minimizes asset misplacement or oversight.
+	•	Scalable for Small Teams: Enables small IT teams or solo IT coordinators to implement structured asset management without costly software.
 
 ---
 
