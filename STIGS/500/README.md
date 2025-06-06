@@ -1,12 +1,12 @@
 
-# 🛡️ **DISA STIG COMPLIANCE FIX - WN10-AU-000500**
-## 📂 Windows 10 Security Baseline: Audit Policy - Application Log Maximum Size
+# **DISA STIG COMPLIANCE FIX - WN10-AU-000500**
+## Windows 10 Security Baseline: Audit Policy - Application Log Maximum Size
 
 ### Led an enterprise-wide STIG compliance remediation initiative in a live Azure environment, resolving a high-severity DISA STIG vulnerability (WN10-AU-000500) across 65 virtual machines. I identified the issue through Tenable scans, developed a custom PowerShell script to increase the application event log size per compliance standards, and deployed the fix across the fleet. The remediation was completed in under 48 hours, with full compliance validated via follow-up scans in a production setting.
 
 <img width="1724" alt="Screenshot 2025-06-01 at 11 46 00 PM" src="https://github.com/user-attachments/assets/41cc47dd-c17d-4ea6-982c-a3f3732a8158" />
 
-### While working as a Cybersecurity Support Engineer Intern At LOG(N) Pacific, I was running an advanced network scan across 65 virtual machines. After reviewing the scan results, I noticed a recurring high-severity failure on all systems — WN10-AU-000500. Left unaddressed, this could impact security visibility and compliance posture. I took full ownership of the issue and proposed a solution.
+### While working as a Cybersecurity Support Engineer Intern At LOG(N) Pacific, I was running an advanced network scan across 65 virtual machines. After reviewing the scan results, I noticed a recurring high-severity failure on all systems WN10-AU-000500. Left unaddressed, this could impact security visibility and compliance posture. I took full ownership of the issue and proposed a solution.
 
 <img width="1657" alt="Screenshot 2025-06-01 at 11 47 38 PM" src="https://github.com/user-attachments/assets/0e57cdff-f97c-4697-82a6-bf34f6e368ff" />
 
@@ -55,12 +55,12 @@ New-ItemProperty -Path $regPath -Name $propertyName -Value $propertyValue -Prope
 Write-Host "Registry value 'MaxSize' set to 0x00008000 under $regPath" 
 </pre>
 
-## ✅ STIG ID: WN10-AU-000500
+## STIG ID: WN10-AU-000500
 - **Category**: Audit Policy
 - **Requirement**: Application log must be large enough to capture audit data
 - **Fix**: Set `MaxSize` registry value to at least 32768 KB
 
-## 📊 IMPACT
+##  IMPACT
 - **Eliminated the risk of overwritten audit logs** during high-volume threat activity  
 - **Saved hours of manual remediation** for LOG(N) Pecific deploying this to 65 VM's 
 - **Positioned the environment for successful federal compliance audits**  
@@ -74,7 +74,7 @@ Write-Host "Registry value 'MaxSize' set to 0x00008000 under $regPath"
 <img width="466" alt="Screenshot 2025-06-02 at 12 28 23 AM" src="https://github.com/user-attachments/assets/cce84a01-8489-4af9-9fb2-b586e826626b" />
 
   
-## 🧠 Author: Samuel Abebe
-- 📅 Date: May 22, 2025
-- 🌐 GitHub: [github.com/samabebe](https://github.com/samabebe)
+##  Author: Samuel Abebe
+-  Date: May 22, 2025
+- GitHub: [github.com/samabebe](https://github.com/samabebe)
 
