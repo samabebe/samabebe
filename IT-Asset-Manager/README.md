@@ -52,6 +52,8 @@ Each asset includes:
 
 ---
 
+https://drive.google.com/file/d/1ZRT8ipff7A7tfN2Ps1YgwTrMFxwK4RVd/view?usp=share_link
+
 ## 🧠 Why I Built This
 
 > As an aspiring IT Support and Asset Coordinator, I created this tool to solve a real-world need: tracking IT equipment in environments without full-scale ITAM software. This project demonstrates my scripting skills, automation mindset, and ability to create practical solutions that save time and reduce asset loss.
