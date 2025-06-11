@@ -62,7 +62,7 @@ Each asset includes:
 ---
 ## Click to Watch 🚨 🚨 🚨 
 
-[![Watch the video](https://img.youtube.com/vi/0UkhLHZccxw/maxresdefault.jpg)](https://youtu.be/0UkhLHZccxw)
+[![Watch the video](https://img.youtube.com/vi/0UkhLHZccxw/maxresdefault.jpg)](https://www.youtube.com/watch?v=XSyh5eBehZs))
 
 
 ## Why I Built This
