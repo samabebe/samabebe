@@ -3,14 +3,6 @@
 A lightweight PowerShell-based tool to manage and track IT equipment (laptops, monitors, peripherals, etc.) using a simple CSV file. Ideal for small IT departments or individual IT coordinators who need a quick and effective way to track assets without expensive software.
 
 ---
-Creates an assets.csv file to store asset data. 
-
-Supports adding, viewing, updating, and searching assets.
-
-Automatically assigns unique IDs (e.g., AST-0001). 
-
-Generates report.csv with “In Use” assets and usage summaries.
-
 ## Features
 
 - View all tracked IT assets
