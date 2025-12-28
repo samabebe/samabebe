@@ -6,11 +6,11 @@ I'm passionate about cybersecurity and love tackling complex challenges through 
 ## ⚠️ Vulnerability Management Projects
 
 - **[Vulnerability Management Program Implementation](https://github.com/samabebe/vulnerability-management-program)**
-- **[Programmatic Vulnerability Remediations (PowerShell and BASH)](https://github.com/joshcybertest/programmatic-vulnerability-remediations)**
+- **[Programmatic Vulnerability Remediations (PowerShell and BASH)](https://github.com/samabebe/samabebe/tree/main/STIGS/500)**
 
-## 🚨 Threat Hunting and Security Operations
+## 🚨 Fun Passion Projects
 
-- **[Threat Hunting Scenario (Tor Browser Usage)](https://github.com/joshmadakor0/threat-hunting-scenario-tor)**
+- **[Equipment Asset Manager – PowerShell Script)](https://github.com/samabebe/samabebe/tree/main/IT-Asset-Manager)**
 
 <hr/>
 
